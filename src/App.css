@@ -1,7 +1,7 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 body {
-  background-image: linear-gradient(to right top, #393e46, #3f5768, #3a7288, #288fa2, #00adb5);
+  background-image: linear-gradient(to right top, #393E46, #3f5768, #3a7288, #288fa2, #00adb5);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

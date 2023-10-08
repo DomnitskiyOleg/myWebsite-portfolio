@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import { Dna } from 'react-loader-spinner';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Stack from 'react-bootstrap/Stack';
@@ -7,12 +7,19 @@ import './App.css';
 
 function App() {
   return (
-    <Stack direction="horizontal" gap={3}>
+    <>
+      <Dna
+        visible={true}
+        height="180"
+        width="180"
+        ariaLabel="dna-loading"
+        wrapperStyle={{}}
+        wrapperClass="dna-wrapper d-xxl-none"
+      />
       <Form.Control className="col-auto" placeholder="Add your item here..." />
       <Button variant="secondary">Submit</Button>
-      <div className="vr" />
       <Button variant="outline-danger">Reset</Button>
-    </Stack>
+    </>
   );
 }
 
