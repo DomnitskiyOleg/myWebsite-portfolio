@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Stack from 'react-bootstrap/Stack';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stack direction="horizontal" gap={3}>
+      <Form.Control className="col-auto" placeholder="Add your item here..." />
+      <Button variant="secondary">Submit</Button>
+      <div className="vr" />
+      <Button variant="outline-danger">Reset</Button>
+    </Stack>
   );
 }
 
 export default App;
+
+
